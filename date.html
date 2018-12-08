@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="popup.css" rel="stylesheet" />
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="pinyin-match.js"></script>
+    <script src="date.js"></script>
+</head>
+
+<body>
+    <div class="listbox">
+    	<div class="box-top">
+    		<h3>欢迎你，<span class="name">耿鑫</span><img class="loginout" src="image/out.png" /></h3>
+    		<div class="logo-cont">
+    			<img src="image/logo2.png" />
+    			<h2>风向标</h2>
+    			<span>自媒体助手</span>
+    		</div>
+    	</div>
+    	<div class="kind-list">
+		  	<span data-name="百家号" class=""><img src="image/bjh.png"/></span>
+		  	<span data-name="趣头条"  class=""><img src="image/qtt.png"/></span>
+		  	<span data-name="大鱼号" class=""><img src="image/yu.png"/></span>
+		  	<span data-name="企鹅号" class=""><img src="image/qq.png"/></span>
+		  	<span data-name="快传号" class=""><img src="image/kc.png"/></span>
+		  	<span data-name="头条号"  class=""><img src="image/tt.png"/></span>
+		  	<span data-name="一点号" class=""><img src="image/ydh.png"/></span>
+		  	<span data-name="QQ看点" class=""><img src="image/qq.png"/></span>
+	  	</div>
+	  	<div class="search-box">
+	  		<input class="keywords" type="text" placeholder="请输入关键字" />
+	  		<img class="clear-btn" src="image/close.png" />
+	  	</div>
+	  	<div id="search-btn">
+	  		<span></span>
+	  		<img src="image/search.png"/>
+	  	</div>
+	  	<div class="list-content">
+	  		<ul id="tb">
+	  			<li>
+  					<a href="javaacript:;">
+	  					<span>1.</span>
+	  					<img src='image/bg2.png' />
+	  					<div>
+	  						<h5>爱国爱你</h5>
+	  						<p class="contact">159543312354</p>
+	  						<p class="kind">账号类型: <span>军事</span></p>
+	  					</div>
+	  				</a>
+	  			</li>
+	  			<li>
+  					<a href="javaacript:;">
+	  					<span>2.</span>
+	  					<img src='image/bg2.png' />
+	  					<div>
+	  						<h5>爱国爱你</h5>
+	  						<p class="contact">159543312354</p>
+	  						<p class="kind">账号类型: <span>军事</span></p>
+	  					</div>
+  					</a>
+	  			</li>
+	  			<li>
+  					<a href="javaacript:;">
+	  					<span>3.</span>
+	  					<img src='image/bg2.png' />
+	  					<div>
+	  						<h5>爱国爱你</h5>
+	  						<p class="contact">159543312354</p>
+	  						<p class="kind">账号类型: <span>军事</span></p>
+	  					</div>
+	  				</a>
+	  			</li>
+	  			<li>
+  					<a href="javaacript:;">
+	  					<span>4.</span>
+	  					<img src='image/bg2.png' />
+	  					<div>
+	  						<h5>爱国爱你</h5>
+	  						<p class="contact">159543312354</p>
+	  						<p class="kind">账号类型: <span>军事</span></p>
+	  					</div>
+	  				</a>
+	  			</li>
+	  		</table>
+	  	</div>
+    </div>
+    <!--退出提示框-->
+    <div class="wrap-dialog hide">
+	    <div class="dialog">
+	        <div class="dialog-header">
+	            <span class="dialog-title">退出登录</span>
+	        </div>
+	        <div class="dialog-body">
+	            <span class="dialog-message">你确认要退出吗？</span>
+	        </div>
+	        <div class="dialog-footer">
+	            <input type="button" class="btn" id="confirm" value="确认" />
+	            <input type="button" class="btn ml50" id="cancel" value="取消" />
+	        </div>
+	    </div>
+	</div>
+</body>
+</html>

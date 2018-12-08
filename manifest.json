@@ -1,0 +1,28 @@
+{
+    "name": "登录",
+    "version": "1.1.4",
+    "manifest_version": 2,
+    "description": "",
+
+    "icons": {
+        "16": "image/logo.png",
+        "48": "image/logo.png",
+        "128": "image/logo.png"
+    },
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "background":{
+    	"scripts":["js/background.js"] 
+    },
+    "permissions": [
+        "contextMenus","tabs","cookies","http://*/*","https://*/*","background", "storage"
+    ],
+    "content_scripts": [  
+	    {  
+	      "all_frames": true,
+	      "matches": ["https://mp.qutoutiao.net/*","https://xui.ptlogin2.qq.com/*","https://mp.dayu.com/*","https://baijiahao.baidu.com/*","https://om.qq.com/*","https://mp.toutiao.com/*","https://sso.toutiao.com/*","https://mp.qq.com/*","https://mp.yidianzixun.com/*","http://kuaichuan.360.cn/*","https://api.open.uc.cn/cas/custom/login?change_uid=1&custom_login_type=common&display=pc&client_id=201&redirect_uri=https%3A%2F%2Fmp.dayu.com%2Flogin%2Fcallback"],  
+	      "js": ["js/jquery-1.7.2.min.js","myscript.js"]  
+	    }  
+    ]
+}
